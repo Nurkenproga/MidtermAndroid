@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/in_pizza_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:srcCompat="@drawable/baseline_19mp_24" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Вау! Кебаб" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_grey"
+        tools:text="Средняя 30см, традиционное тесто, 530г" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        tools:text="Мясо говядины, соус ранч, сыр моцарелла, сладкий перец, томаты, красный лук и фирменный томатный соус" />
+
+    <TextView
+        android:id="@+id/remove_ingridients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/remove_ingredients"
+        android:textColor="@color/orange" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/size_group"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/small_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/near_blue"
+            android:text="@string/small"
+
+            />
+
+        <Button
+            android:id="@+id/medium_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/near_blue"
+            android:text="@string/medium" />
+
+        <Button
+            android:id="@+id/big_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/near_blue"
+            android:text="@string/big" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/dough_group"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/traditional_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/near_blue"
+            android:text="@string/traditional" />
+
+        <Button
+            android:id="@+id/thin_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/near_blue"
+            android:text="@string/thin" />
+
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</LinearLayout>
