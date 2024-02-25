@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DodoPizza</string>
+    <string name="remove_ingredients">Убрать ингридиенты</string>
+    <string name="small">Маленькая</string>
+    <string name="medium">Средняя</string>
+    <string name="big">Большая</string>
+    <string name="traditional">Традиционное</string>
+    <string name="thin">Тонкое</string>
+    <string name="add_smth">Добавить по вкусу</string>
+</resources>

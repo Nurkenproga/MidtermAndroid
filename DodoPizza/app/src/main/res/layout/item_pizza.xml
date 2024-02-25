@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pizza_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        tools:srcCompat="@drawable/baseline_10k_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Pepperoni" />
+
+        <TextView
+            android:id="@+id/pizza_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Chicken pepperoni with mozzarella and tomato sauce" />
+
+
+        <TextView
+            android:id="@+id/pizza_price"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border1"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            tools:text="2 900тг" />
+
+    </LinearLayout>
+
+</LinearLayout>
